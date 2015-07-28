@@ -1,0 +1,23 @@
+{
+  "name": "react-workshop-first",
+  "version": "1.0.0",
+  "description": "React workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanez/react-workshop-first.git"
+  },
+  "keywords": [
+    "nodejs",
+    "reactjs"
+  ],
+  "author": "Rodrigo Yanez",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/ryanez/react-workshop-first/issues"
+  },
+  "homepage": "https://github.com/ryanez/react-workshop-first"
+}
