@@ -1,5 +1,7 @@
 # ReactJS Workshop
 
+The purpose of this workshop/tutorial is to shorten the learning curve and provide a set of exercises & steps you need to follow to start writing React based applications.
+
 # The requirements
 
 - [Node.js & npm](https://docs.npmjs.com/getting-started/installing-node)
