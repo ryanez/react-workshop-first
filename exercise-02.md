@@ -1,4 +1,4 @@
-# Second exercise
+# Stateful component
 
 React components have properties & state, they are two different things, properties are provided by an external source and the state is managed internally. Now that we know how to write a ReactJS component we will add some behavior and state to it.
 
