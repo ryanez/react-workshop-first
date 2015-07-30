@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-08": "browserify -t reactify ui/exercise-08.js -o public/exercise-08.js -s rockandroll"
+    "build-08": "browserify -t reactify ui/exercise-08.js -o public/exercise-08.js -s rockandroll",
+    "build-08-dist": "browserify -t reactify ui/exercise-08.js -s rockandroll | uglifyjs -m > public/exercise-08.min.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/ryanez/react-workshop-first",
   "devDependencies": {
     "react": "^0.13.3",
-    "reactify": "^1.1.1"
+    "reactify": "^1.1.1",
+    "uglify-js": "^2.4.24"
   }
 }
