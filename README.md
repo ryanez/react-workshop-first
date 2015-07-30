@@ -36,7 +36,7 @@ One of the most powerful things about ReactJS is that you can reuse your compone
 
 # The build tools
 
-Now the we have reusable components and our collection will grow and grow we need a better way to use them and ensure they are present in the browser when we need them to be there. Lets talk about it in [Exercise-07](excersice-07.md).
+Now the we have reusable components and our collection will grow and grow we need a better way to use them and ensure they are present in the browser when we need them to be there. Lets talk about it in [Exercise-07](exercise-07.md).
 
 # External dependencies
 
