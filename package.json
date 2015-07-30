@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/ryanez/react-workshop-first/issues"
   },
-  "homepage": "https://github.com/ryanez/react-workshop-first"
+  "homepage": "https://github.com/ryanez/react-workshop-first",
+  "devDependencies": {
+    "react": "^0.13.3"
+  }
 }
