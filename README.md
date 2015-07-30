@@ -53,3 +53,31 @@ If you don't want to write the **Browserify** build command each time you want t
 ```
 
 Now you can go to command line and run `npm run build-08`
+
+# Distribution
+
+Now that you have managed to bundle the source files, next step is to mimify them.
+
+- On command line run `npm install uglify-js`
+
+The **uglifyjs** will work receive the stream that **Browserify** produces and will mimify it. Note that now we **DO NOT** want the browserify output to be persisted in a physical file, instead we want that stream to be **piped** to, and received by **uglifyjs**.
+
+To concatenate the tools we will use the pipe `|` and then call the uglify tool `| uglify -m > public/exercise-08.min.js`
+
+- Add a new script line in the `package.json` file named `build-08-dist`
+```
+  "scripts": {
+    "build-08": "browserify -t reactify ui/exercise-08.js -o public/exercise-08.js -s rockandroll",
+    "build-08-dist": "browserify -t reactify ui/exercise-08.js -s rockandroll | uglifyjs -m > public/exercise-08.min.js"
+  },
+```
+
+**NOTE** that we removed the `-o public/exercise-08.js`
+
+There is one point missing here `NODE_ENV=production`, I haven't added it because I'm running on windows and I need to write it each time I run the `npm run build-08-dist` command.
+
+*Windows*
+- On command line run `set NODE_ENV=production; npm run build-08-dist`.
+
+*OS*
+- Modify the script to read `"build-08-dist": "NODE_ENV=production browserify -t reactify ui/exercise-08.js -s rockandroll | uglifyjs -m > public/exercise-08.min.js"` and you are ready to run on command line `npm run build-08-dist`.
