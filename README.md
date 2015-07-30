@@ -18,6 +18,14 @@ In [Exercise-04](exercise-04.md) you will see the advantages of using **JSX** in
 
 # JSX offline transform
 
+You probably are thinking that it will cost a lot of time to the browser to `JSXTransform` all our scripts, and that the `html` file will no longer be maintainable as we continue adding more features. We can transform/process the **JSX** server side using the `react-tools`.
+
+In the [Excercise-05](exercise-05.md) you will learn how to deal with this problem and jump to the next level.
+
+# Reusable components
+
+One of the most powerful things about ReactJS is that you can reuse your components, lets cover that in [Exercise-06](exercise-06.md).
+
 # The requirements
 
 - [Node.js & npm](https://docs.npmjs.com/getting-started/installing-node)
