@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ryanez/react-workshop-first",
   "devDependencies": {
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "reactify": "^1.1.1"
   }
 }
