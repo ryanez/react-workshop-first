@@ -1,4 +1,4 @@
-#Third exercise
+# Component with poperties
 
 Now that we have a component with state, lets make it a more usable. We will add a property that will allow us to modify the frequency on which the counter will be updated.
 
