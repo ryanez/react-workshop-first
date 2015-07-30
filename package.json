@@ -4,7 +4,8 @@
   "description": "React workshop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-08": "browserify -t reactify ui/exercise-08.js -o public/exercise-08.js -s rockandroll"
   },
   "repository": {
     "type": "git",
