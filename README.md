@@ -54,6 +54,18 @@ If you don't want to write the **Browserify** build command each time you want t
 
 Now you can go to command line and run `npm run build-08`
 
+# Watch the Browserify?
+
+Sure, you need to install **Watchify** `npm install -g watchify`, as **watchify** wraps the **browserify** you will replace the one for the other.
+
+```
+  "scripts": {
+    "watch-08": "watchify -t reactify ui/exercise-08.js -o public/exercise-08.js -s rockandroll -v"
+  },
+```
+
+Now you can run `npm run watch-08` and start writing code like a rockstar
+
 # Distribution
 
 Now that you have managed to bundle the source files, next step is to mimify them.
@@ -81,3 +93,17 @@ There is one point missing here `NODE_ENV=production`, I haven't added it becaus
 
 *OS*
 - Modify the script to read `"build-08-dist": "NODE_ENV=production browserify -t reactify ui/exercise-08.js -s rockandroll | uglifyjs -m > public/exercise-08.min.js"` and you are ready to run on command line `npm run build-08-dist`.
+
+# Watchify the Uglyfied Browserified code?
+
+Sure =)
+
+Unfortunatelly this doesn't work on *windows*. You can send the output `-o` to a shell command. **Note** that I'm on windows and didn't tested this.
+
+```
+  "scripts": {
+    "watch-08-dist": "watchify -t reactify ui/exercise-08.js -s rockandroll -o 'uglifyjs -m > public/exercise-08.min.js'"
+  },
+```
+
+You will probably need to install `npm install -g uglify-js` as global so the shell detects it.
